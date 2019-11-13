@@ -1,5 +1,5 @@
 {
-    "name": "Mald/cdn-helper",
+    "name": "mald/cdn-helper",
     "description": "Helper function to create CDN url's",
     "type": "library",
     "license": "proprietary",
