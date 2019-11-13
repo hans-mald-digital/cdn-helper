@@ -1,0 +1,25 @@
+language: php
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+php:
+  - '7.2'
+  - '7.3'
+
+env:
+  - ILLUMINATE_VERSION=5.8.* TESTBENCH_VERSION=3.8.*
+  - ILLUMINATE_VERSION=6.* TESTBENCH_VERSION=4.*
+
+sudo: false
+
+before_install:
+  - composer require laravel/framework:${ILLUMINATE_VERSION} --no-update
+  - composer require orchestra/testbench:"${TESTBENCH_VERSION}" --no-update
+
+install:
+  - composer install --no-interaction --no-progress --no-suggest --prefer-dist
+
+script:
+  - ./vendor/bin/phpunit --verbose
