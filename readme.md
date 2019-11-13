@@ -1,4 +1,4 @@
-# 23g/cdn-helper
+# mald/cdn-helper
 CDN helper
 
 - [Installation](#installation)
@@ -8,15 +8,15 @@ CDN helper
 
 1. First install the helper with composer:
 
-`composer require 23g/cdn-helper`
+`composer require mald/cdn-helper`
 
 2. Publish assets:
 
-`php artisan vendor:publish --tag=23g-cdn-helper`
+`php artisan vendor:publish --tag=mald-cdn-helper`
 
 Add CDN_URL to the .env of the project with the correct url towards the cdn, for example:
 
-CDN_URL=https://cdn.23g.nl
+CDN_URL=https://cdn.mald.digital
 
 ## Usage
 

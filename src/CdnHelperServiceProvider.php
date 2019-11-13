@@ -10,7 +10,7 @@ class CdnHelperServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/cdn_helper.php' => config_path('cdn_helper.php'),
-        ], '23g-cdn-helper');
+        ], 'mald-cdn-helper');
     }
 
     public function register()
