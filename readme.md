@@ -16,7 +16,7 @@ CDN helper
 
 Add CDN_URL to the .env of the project with the correct url towards the cdn, for example:
 
-CDN_URL=https://cdn.mald.digital
+CDN_URL=https://d1pj9b3xsimjd0.cloudfront.net
 
 ## Usage
 
