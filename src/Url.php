@@ -29,10 +29,11 @@ class Url
      * @param string $path
      * @param string|null $dimensions
      * @param string|null $mode
+     * @param string|null $url
      */
-    public function __construct(string $path, ?string $dimensions = null, ?string $mode = 'crop')
+    public function __construct(string $path, ?string $dimensions = null, ?string $mode = 'crop', ?string $url = null)
     {
-        $this->url = config()->get('cdn_helper.url');
+        $this->url = $url ?? config()->get('cdn_helper.url');
         $this->path = $path;
         $this->dimensions = $dimensions;
         $this->mode = $mode;
